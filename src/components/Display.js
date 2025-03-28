@@ -16,24 +16,25 @@ const Display = ({ value, isRadians, isInverse }) => {
 
 const styles = StyleSheet.create({
   display: {
-    padding: 24,
+    padding: 1,
     backgroundColor: "#202020",
+    minHeight: 10,
   },
   indicators: {
     flexDirection: "row",
     justifyContent: "flex-end",
-    marginBottom: 5,
+    marginBottom: 1,
   },
   indicator: {
     color: "#999",
     fontSize: 14,
-    marginLeft: 10,
+    marginLeft: 1,
   },
   value: {
     color: "white",
-    fontSize: 48,
+    fontSize: 64,
     textAlign: "right",
-    fontWeight: "300",
+    fontWeight: "100",
   },
 })
 
