@@ -81,6 +81,10 @@ export default function App() {
     setCurrentValue(String(memoryValue));
   };
 
+  const handleMemoryClear = () => {
+    setMemoryValue(0);
+  }
+
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" />
@@ -95,6 +99,7 @@ export default function App() {
           <Button title="M+" onPress={handleMemoryAdd} type="memory" />
           <Button title="M-" onPress={handleMemorySubtract} type="memory" />
           <Button title="RM" onPress={handleMemoryRecall} type="memory" />
+          <Button title="MC" onPress={handleMemoryClear} type="memory" />
           <Button title="C" onPress={handleClearPress} type="control" />
         </View>
         
